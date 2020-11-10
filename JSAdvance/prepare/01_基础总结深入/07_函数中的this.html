@@ -34,26 +34,26 @@
     };
   }
 
-  Person("red"); //this是谁?
+  Person("red"); //this是谁?   Window
 
-  var p = new Person("yello"); //this是谁?
+  var p = new Person("yello"); //this是谁?    Person
 
-  p.getColor(); //this是谁?
+  p.getColor(); //this是谁?   Person
 
   var obj = {};
-  p.setColor.call(obj, "black"); //this是谁?
+  p.setColor.call(obj, "black"); //this是谁?  Object
 
   var test = p.setColor;
-  test(); //this是谁?
+  test(); //this是谁?           Window
 
   function fun1() {
     function fun2() {
       console.log(this);
     }
 
-    fun2(); //this是谁?
+    fun2(); //this是谁?       Window
   }
-  fun1();
+  fun1();    //Window
 </script>
 </body>
 </html>
