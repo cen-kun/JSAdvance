@@ -22,7 +22,7 @@
   }
 
   function Student(name, age, price) {
-    Person.call(this, name, age)   // this.Person(name, age)
+    Person.call(this, name, age)   // this.Person(name, age)     实际上这个this应该指的就是Student对象
     this.price = price
   }
 

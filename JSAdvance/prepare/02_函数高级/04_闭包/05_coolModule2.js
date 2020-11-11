@@ -17,4 +17,4 @@
     doSomething: a,
     doOtherthing: b
   }
-})(window)
+})(window)              //这个不是之前的自调用函数么     把需要暴露的附加给window当做window的一个属性了
